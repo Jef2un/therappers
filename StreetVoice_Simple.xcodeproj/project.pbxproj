@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6805930C2A1B44EB00221141 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805930B2A1B44EB00221141 /* AppDelegate.swift */; };
+		6805930E2A1B44EB00221141 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805930D2A1B44EB00221141 /* SceneDelegate.swift */; };
+		680593102A1B44EB00221141 /* SongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805930F2A1B44EB00221141 /* SongViewController.swift */; };
+		680593152A1B44EC00221141 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 680593142A1B44EC00221141 /* Assets.xcassets */; };
+		680593182A1B44EC00221141 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 680593162A1B44EC00221141 /* LaunchScreen.storyboard */; };
+		680593212A1B47C800221141 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680593202A1B47C800221141 /* ProfileViewController.swift */; };
+		680593232A1B47F700221141 /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680593222A1B47F700221141 /* ActivitiesViewController.swift */; };
+		680593252A1B486000221141 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680593242A1B486000221141 /* TabBarViewController.swift */; };
+		680593292A1B585D00221141 /* MusicTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680593282A1B585D00221141 /* MusicTableViewCell.swift */; };
+		6805932B2A1B5E3700221141 /* MusicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6805932A2A1B5E3700221141 /* MusicData.swift */; };
+		68778A5D2A1F2E32006D1CB5 /* music in Resources */ = {isa = PBXBuildFile; fileRef = 68778A5C2A1F2E32006D1CB5 /* music */; };
+		68778A5F2A1F406C006D1CB5 /* LoggedInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A5E2A1F406C006D1CB5 /* LoggedInViewController.swift */; };
+		68778A612A1F886A006D1CB5 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A602A1F886A006D1CB5 /* ProfileTableViewCell.swift */; };
+		68778A632A2044B8006D1CB5 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A622A2044B8006D1CB5 /* ProfileCell.swift */; };
+		68778A672A2081DE006D1CB5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 68778A662A2081DE006D1CB5 /* GoogleService-Info.plist */; };
+		68778A692A20877D006D1CB5 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A682A20877D006D1CB5 /* WeatherData.swift */; };
+		68778A6C2A2087FA006D1CB5 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A6B2A2087FA006D1CB5 /* MusicManager.swift */; };
+		68778A712A20BA1B006D1CB5 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68778A702A20BA1B006D1CB5 /* WeatherModel.swift */; };
+		68E46C4F2A1BA991005C5242 /* AlbumDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C4E2A1BA991005C5242 /* AlbumDetailViewController.swift */; };
+		68E46C782A1C7FF3005C5242 /* TileCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C752A1C7FF3005C5242 /* TileCollectionViewCell.swift */; };
+		68E46C7A2A1C7FF3005C5242 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C772A1C7FF3005C5242 /* CollectionTableViewCell.swift */; };
+		68E46C7E2A1C90D3005C5242 /* ReportData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C7D2A1C90D3005C5242 /* ReportData.swift */; };
+		68E46C802A1C95D3005C5242 /* ActivityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C7F2A1C95D3005C5242 /* ActivityTableViewCell.swift */; };
+		68E46C822A1CA4F3005C5242 /* ActifityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C812A1CA4F3005C5242 /* ActifityDetailViewController.swift */; };
+		68E46C852A1CEF08005C5242 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C842A1CEF08005C5242 /* LoginViewController.swift */; };
+		68E46C8B2A1DA185005C5242 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 68E46C8A2A1DA185005C5242 /* FirebaseAuth */; };
+		68E46C8D2A1DAB30005C5242 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C8C2A1DAB30005C5242 /* RegisterViewController.swift */; };
+		68E46C942A1DDB72005C5242 /* SongDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 68E46C922A1DDB72005C5242 /* SongDatabase.xcdatamodeld */; };
+		68E46C972A1E151E005C5242 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 68E46C962A1E151E005C5242 /* GoogleSignInSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		680593082A1B44EB00221141 /* StreetVoice_Simple.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StreetVoice_Simple.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6805930B2A1B44EB00221141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6805930D2A1B44EB00221141 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6805930F2A1B44EB00221141 /* SongViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewController.swift; sourceTree = "<group>"; };
+		680593142A1B44EC00221141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		680593172A1B44EC00221141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		680593192A1B44EC00221141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		680593202A1B47C800221141 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		680593222A1B47F700221141 /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		680593242A1B486000221141 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		680593282A1B585D00221141 /* MusicTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTableViewCell.swift; sourceTree = "<group>"; };
+		6805932A2A1B5E3700221141 /* MusicData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicData.swift; sourceTree = "<group>"; };
+		68778A5C2A1F2E32006D1CB5 /* music */ = {isa = PBXFileReference; lastKnownFileType = folder; path = music; sourceTree = "<group>"; };
+		68778A5E2A1F406C006D1CB5 /* LoggedInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInViewController.swift; sourceTree = "<group>"; };
+		68778A602A1F886A006D1CB5 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		68778A622A2044B8006D1CB5 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		68778A662A2081DE006D1CB5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		68778A682A20877D006D1CB5 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		68778A6B2A2087FA006D1CB5 /* MusicManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+		68778A702A20BA1B006D1CB5 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		68E46C4E2A1BA991005C5242 /* AlbumDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailViewController.swift; sourceTree = "<group>"; };
+		68E46C752A1C7FF3005C5242 /* TileCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileCollectionViewCell.swift; sourceTree = "<group>"; };
+		68E46C772A1C7FF3005C5242 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
+		68E46C7D2A1C90D3005C5242 /* ReportData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportData.swift; sourceTree = "<group>"; };
+		68E46C7F2A1C95D3005C5242 /* ActivityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewCell.swift; sourceTree = "<group>"; };
+		68E46C812A1CA4F3005C5242 /* ActifityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActifityDetailViewController.swift; sourceTree = "<group>"; };
+		68E46C842A1CEF08005C5242 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		68E46C8C2A1DAB30005C5242 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		68E46C932A1DDB72005C5242 /* SongDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SongDatabase.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		680593052A1B44EB00221141 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				68E46C8B2A1DA185005C5242 /* FirebaseAuth in Frameworks */,
+				68E46C972A1E151E005C5242 /* GoogleSignInSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		680592FF2A1B44EA00221141 = {
+			isa = PBXGroup;
+			children = (
+				6805930A2A1B44EB00221141 /* StreetVoice_Simple */,
+				680593092A1B44EB00221141 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		680593092A1B44EB00221141 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				680593082A1B44EB00221141 /* StreetVoice_Simple.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6805930A2A1B44EB00221141 /* StreetVoice_Simple */ = {
+			isa = PBXGroup;
+			children = (
+				68778A662A2081DE006D1CB5 /* GoogleService-Info.plist */,
+				680593192A1B44EC00221141 /* Info.plist */,
+				6805930B2A1B44EB00221141 /* AppDelegate.swift */,
+				6805930D2A1B44EB00221141 /* SceneDelegate.swift */,
+				68778A6A2A2087CA006D1CB5 /* Controller */,
+				6805931F2A1B47A900221141 /* Views */,
+				680593272A1B51BE00221141 /* Models */,
+				68E46C862A1CF8FC005C5242 /* Resource */,
+			);
+			path = StreetVoice_Simple;
+			sourceTree = "<group>";
+		};
+		6805931F2A1B47A900221141 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				680593242A1B486000221141 /* TabBarViewController.swift */,
+				68E46C922A1DDB72005C5242 /* SongDatabase.xcdatamodeld */,
+				68E46C7C2A1C8E54005C5242 /* Activities */,
+				68E46C7B2A1C8E44005C5242 /* Music */,
+				68E46C832A1CAE70005C5242 /* Profile */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		680593272A1B51BE00221141 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				68778A6B2A2087FA006D1CB5 /* MusicManager.swift */,
+				68778A702A20BA1B006D1CB5 /* WeatherModel.swift */,
+				68778A682A20877D006D1CB5 /* WeatherData.swift */,
+				6805932A2A1B5E3700221141 /* MusicData.swift */,
+				68E46C7D2A1C90D3005C5242 /* ReportData.swift */,
+				68778A622A2044B8006D1CB5 /* ProfileCell.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		68778A6A2A2087CA006D1CB5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				68778A6F2A20B5CC006D1CB5 /* Profile */,
+				68778A6E2A20B5BE006D1CB5 /* Activities */,
+				68778A6D2A20B5AB006D1CB5 /* Music */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		68778A6D2A20B5AB006D1CB5 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				6805930F2A1B44EB00221141 /* SongViewController.swift */,
+				68E46C4E2A1BA991005C5242 /* AlbumDetailViewController.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		68778A6E2A20B5BE006D1CB5 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				68E46C812A1CA4F3005C5242 /* ActifityDetailViewController.swift */,
+				680593222A1B47F700221141 /* ActivitiesViewController.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		68778A6F2A20B5CC006D1CB5 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				680593202A1B47C800221141 /* ProfileViewController.swift */,
+				68778A5E2A1F406C006D1CB5 /* LoggedInViewController.swift */,
+				68E46C842A1CEF08005C5242 /* LoginViewController.swift */,
+				68E46C8C2A1DAB30005C5242 /* RegisterViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		68E46C7B2A1C8E44005C5242 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				68E46C772A1C7FF3005C5242 /* CollectionTableViewCell.swift */,
+				68E46C752A1C7FF3005C5242 /* TileCollectionViewCell.swift */,
+				680593282A1B585D00221141 /* MusicTableViewCell.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		68E46C7C2A1C8E54005C5242 /* Activities */ = {
+			isa = PBXGroup;
+			children = (
+				68E46C7F2A1C95D3005C5242 /* ActivityTableViewCell.swift */,
+			);
+			path = Activities;
+			sourceTree = "<group>";
+		};
+		68E46C832A1CAE70005C5242 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				68778A602A1F886A006D1CB5 /* ProfileTableViewCell.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		68E46C862A1CF8FC005C5242 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				68778A5C2A1F2E32006D1CB5 /* music */,
+				680593142A1B44EC00221141 /* Assets.xcassets */,
+				680593162A1B44EC00221141 /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		680593072A1B44EB00221141 /* StreetVoice_Simple */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6805931C2A1B44EC00221141 /* Build configuration list for PBXNativeTarget "StreetVoice_Simple" */;
+			buildPhases = (
+				680593042A1B44EB00221141 /* Sources */,
+				680593052A1B44EB00221141 /* Frameworks */,
+				680593062A1B44EB00221141 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StreetVoice_Simple;
+			packageProductDependencies = (
+				68E46C8A2A1DA185005C5242 /* FirebaseAuth */,
+				68E46C962A1E151E005C5242 /* GoogleSignInSwift */,
+			);
+			productName = StreetVoice_Simple;
+			productReference = 680593082A1B44EB00221141 /* StreetVoice_Simple.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		680593002A1B44EA00221141 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					680593072A1B44EB00221141 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+				};
+			};
+			buildConfigurationList = 680593032A1B44EA00221141 /* Build configuration list for PBXProject "StreetVoice_Simple" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 680592FF2A1B44EA00221141;
+			packageReferences = (
+				68E46C892A1DA185005C5242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				68E46C952A1E151E005C5242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = 680593092A1B44EB00221141 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				680593072A1B44EB00221141 /* StreetVoice_Simple */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		680593062A1B44EB00221141 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680593182A1B44EC00221141 /* LaunchScreen.storyboard in Resources */,
+				680593152A1B44EC00221141 /* Assets.xcassets in Resources */,
+				68778A672A2081DE006D1CB5 /* GoogleService-Info.plist in Resources */,
+				68778A5D2A1F2E32006D1CB5 /* music in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		680593042A1B44EB00221141 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				680593102A1B44EB00221141 /* SongViewController.swift in Sources */,
+				68778A5F2A1F406C006D1CB5 /* LoggedInViewController.swift in Sources */,
+				6805930C2A1B44EB00221141 /* AppDelegate.swift in Sources */,
+				680593232A1B47F700221141 /* ActivitiesViewController.swift in Sources */,
+				680593212A1B47C800221141 /* ProfileViewController.swift in Sources */,
+				68E46C802A1C95D3005C5242 /* ActivityTableViewCell.swift in Sources */,
+				68778A632A2044B8006D1CB5 /* ProfileCell.swift in Sources */,
+				680593292A1B585D00221141 /* MusicTableViewCell.swift in Sources */,
+				6805932B2A1B5E3700221141 /* MusicData.swift in Sources */,
+				68E46C7A2A1C7FF3005C5242 /* CollectionTableViewCell.swift in Sources */,
+				68778A6C2A2087FA006D1CB5 /* MusicManager.swift in Sources */,
+				68E46C942A1DDB72005C5242 /* SongDatabase.xcdatamodeld in Sources */,
+				68E46C782A1C7FF3005C5242 /* TileCollectionViewCell.swift in Sources */,
+				68E46C4F2A1BA991005C5242 /* AlbumDetailViewController.swift in Sources */,
+				68778A612A1F886A006D1CB5 /* ProfileTableViewCell.swift in Sources */,
+				68E46C7E2A1C90D3005C5242 /* ReportData.swift in Sources */,
+				68778A692A20877D006D1CB5 /* WeatherData.swift in Sources */,
+				68E46C852A1CEF08005C5242 /* LoginViewController.swift in Sources */,
+				68E46C8D2A1DAB30005C5242 /* RegisterViewController.swift in Sources */,
+				680593252A1B486000221141 /* TabBarViewController.swift in Sources */,
+				6805930E2A1B44EB00221141 /* SceneDelegate.swift in Sources */,
+				68778A712A20BA1B006D1CB5 /* WeatherModel.swift in Sources */,
+				68E46C822A1CA4F3005C5242 /* ActifityDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		680593162A1B44EC00221141 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				680593172A1B44EC00221141 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6805931A2A1B44EC00221141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6805931B2A1B44EC00221141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6805931D2A1B44EC00221141 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StreetVoice_Simple/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jeff-sideproject.StreetVoice-Simple";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6805931E2A1B44EC00221141 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StreetVoice_Simple/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Jeff-sideproject.StreetVoice-Simple123";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		680593032A1B44EA00221141 /* Build configuration list for PBXProject "StreetVoice_Simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6805931A2A1B44EC00221141 /* Debug */,
+				6805931B2A1B44EC00221141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6805931C2A1B44EC00221141 /* Build configuration list for PBXNativeTarget "StreetVoice_Simple" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6805931D2A1B44EC00221141 /* Debug */,
+				6805931E2A1B44EC00221141 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		68E46C892A1DA185005C5242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+		68E46C952A1E151E005C5242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		68E46C8A2A1DA185005C5242 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68E46C892A1DA185005C5242 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		68E46C962A1E151E005C5242 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 68E46C952A1E151E005C5242 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		68E46C922A1DDB72005C5242 /* SongDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				68E46C932A1DDB72005C5242 /* SongDatabase.xcdatamodel */,
+			);
+			currentVersion = 68E46C932A1DDB72005C5242 /* SongDatabase.xcdatamodel */;
+			path = SongDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 680593002A1B44EA00221141 /* Project object */;
+}
