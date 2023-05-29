@@ -1,9 +1,3 @@
-//
-//  LoginViewController.swift
-//  StreetVoice_Simple
-//
-//  Created by Jef2un_628 on 2023/5/23.
-//
 
 import UIKit
 import Firebase
@@ -87,12 +81,12 @@ class LoginViewController: UIViewController {
         return btn
     }()
     
-//    private let phone: UIButton = {
-//        var btn = UIButton()
-//        btn.setImage(UIImage(named: "smartphone"), for: .normal)
-//
-//        return btn
-//    }()
+    //    private let phone: UIButton = {
+    //        var btn = UIButton()
+    //        btn.setImage(UIImage(named: "smartphone"), for: .normal)
+    //
+    //        return btn
+    //    }()
     
     private lazy var btnStackView: UIStackView = {
         var stackView = UIStackView(arrangedSubviews: [gmail,fb])
@@ -101,7 +95,6 @@ class LoginViewController: UIViewController {
         stackView.spacing = 50
         return stackView
     }()
-    
     
     
     override func viewDidLoad() {
@@ -176,9 +169,9 @@ class LoginViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default))
                     self.present(alert, animated: true)
                 } else {
-                    self.dismiss(animated: true, completion: nil)
-                }          }
-            
+                    self.navigationController?.pushViewController(LoggedInViewController(), animated: true)
+                }
+            }
         }
     }
     
@@ -198,8 +191,9 @@ class LoginViewController: UIViewController {
                         alert.addAction(UIAlertAction(title: "OK", style: .default))
                         self?.present(alert, animated: true)
                     }else{
-                        self?.dismiss(animated: true, completion: nil)
-
+                        let loggedInVC = LoggedInViewController()
+                        self?.navigationController?.pushViewController(loggedInVC, animated: true)
+                        
                     }
                 }
             }
@@ -286,7 +280,7 @@ class LoginViewController: UIViewController {
             btnStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             btnStackView.bottomAnchor.constraint(equalTo: view.bottomAnchor,constant: -100),
             btnStackView.heightAnchor.constraint(equalToConstant: 40)
-
+            
         ])
     }
     

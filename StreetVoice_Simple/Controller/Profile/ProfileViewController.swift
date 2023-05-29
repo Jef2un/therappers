@@ -1,9 +1,3 @@
-//
-//  ProfileViewController.swift
-//  StreetVoice_Simple
-//
-//  Created by Jef2un_628 on 2023/5/22.
-//
 
 import UIKit
 import FirebaseAuth
@@ -85,3 +79,4 @@ class ProfileViewController: UIViewController {
         
     }
 }
+

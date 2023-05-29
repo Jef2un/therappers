@@ -117,7 +117,6 @@
 		6805931F2A1B47A900221141 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				680593242A1B486000221141 /* TabBarViewController.swift */,
 				68E46C922A1DDB72005C5242 /* SongDatabase.xcdatamodeld */,
 				68E46C7C2A1C8E54005C5242 /* Activities */,
 				68E46C7B2A1C8E44005C5242 /* Music */,
@@ -142,6 +141,7 @@
 		68778A6A2A2087CA006D1CB5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				680593242A1B486000221141 /* TabBarViewController.swift */,
 				68778A6F2A20B5CC006D1CB5 /* Profile */,
 				68778A6E2A20B5BE006D1CB5 /* Activities */,
 				68778A6D2A20B5AB006D1CB5 /* Music */,

@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
     var playOrNot: Bool = false
 
     let songVC = SongViewController()
-    let profileVC = ProfileViewController()
+    let profileVC = LoginViewController()
     let activitiesVC = ActivitiesViewController()
     // let profileVC = LoggedInViewController()
     
@@ -149,13 +149,13 @@ class TabBarViewController: UITabBarController {
         let songNavVC = UINavigationController(rootViewController: songVC)
         songVC.tabBarItem = UITabBarItem(title: "歌曲", image: UIImage(systemName: "flame.fill"), tag: 0)
         
-//        let profileNavVC = UINavigationController(rootViewController: profileVC)
+        let profileNavVC = UINavigationController(rootViewController: profileVC)
         profileVC.tabBarItem = UITabBarItem(title: "我的", image: UIImage(systemName: "person.fill"), tag: 1)
 
         let activitiesNavVC = UINavigationController(rootViewController: activitiesVC)
         activitiesVC.tabBarItem = UITabBarItem(title: "活動", image: UIImage(systemName: "music.mic.circle.fill"), tag: 2)
         
-        viewControllers = [songNavVC, activitiesNavVC, profileVC]
+        viewControllers = [songNavVC, activitiesNavVC, profileNavVC]
     }
 }
 

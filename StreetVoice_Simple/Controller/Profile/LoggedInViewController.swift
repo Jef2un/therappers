@@ -1,11 +1,10 @@
-//
-//  LoggedInViewController.swift
-//  StreetVoice_Simple
-//
-//  Created by Jef2un_628 on 2023/5/25.
-//
+
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import GoogleSignIn
+import FirebaseCore
 
 class LoggedInViewController: UIViewController {
     
@@ -97,9 +96,9 @@ class LoggedInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.isHidden = true
         view.backgroundColor = .systemBackground
         addSubView()
-        self.navigationController?.hidesBarsOnTap = true
             
         
         setDelegate()
