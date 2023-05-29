@@ -6,8 +6,11 @@
 //
 
 import UIKit
+import FirebaseAuth
 
 class ProfileViewController: UIViewController {
+
+    var handle: AuthStateDidChangeListenerHandle?
 
     private let loginImage: UIImageView = {
         var image = UIImageView()
@@ -40,7 +43,9 @@ class ProfileViewController: UIViewController {
         popVC.modalPresentationStyle = .popover
         present(popVC, animated: true)
     }
-    
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .systemBackground
@@ -52,6 +57,7 @@ class ProfileViewController: UIViewController {
         
 
     }
+
     private func addView(){
         view.addSubview(loginBtn)
         view.addSubview(loginImage)

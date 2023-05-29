@@ -27,9 +27,9 @@ class TabBarViewController: UITabBarController {
     var playOrNot: Bool = false
 
     let songVC = SongViewController()
-//    let profileVC = ProfileViewController()
+    let profileVC = ProfileViewController()
     let activitiesVC = ActivitiesViewController()
-    let profileVC = LoggedInViewController()
+    // let profileVC = LoggedInViewController()
     
     let songImage: UIImageView = {
         var image = UIImageView()
