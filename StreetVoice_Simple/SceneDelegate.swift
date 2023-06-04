@@ -17,7 +17,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         UINavigationBar.appearance().prefersLargeTitles = true
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = TabBarViewController()
+        
+        if ShareManager.shared.isSignIn{
+            window!.rootViewController = TabBarViewController()
+        }else{
+            let navVC = UINavigationController(rootViewController: LoginViewController())
+            navVC.navigationBar.prefersLargeTitles = false
+            navVC.viewControllers.first?.navigationItem.largeTitleDisplayMode = .always
+            window!.rootViewController = navVC
+        }
         window?.makeKeyAndVisible()
         
         

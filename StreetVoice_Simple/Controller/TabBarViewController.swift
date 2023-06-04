@@ -27,7 +27,7 @@ class TabBarViewController: UITabBarController {
     var playOrNot: Bool = false
 
     let songVC = SongViewController()
-    let profileVC = LoginViewController()
+    let profileVC = LoggedInViewController()
     let activitiesVC = ActivitiesViewController()
     // let profileVC = LoggedInViewController()
     

@@ -81,13 +81,6 @@ class LoginViewController: UIViewController {
         return btn
     }()
     
-    //    private let phone: UIButton = {
-    //        var btn = UIButton()
-    //        btn.setImage(UIImage(named: "smartphone"), for: .normal)
-    //
-    //        return btn
-    //    }()
-    
     private lazy var btnStackView: UIStackView = {
         var stackView = UIStackView(arrangedSubviews: [gmail,fb])
         stackView.axis = .horizontal
@@ -123,15 +116,6 @@ class LoginViewController: UIViewController {
         tapToEndEdit()
         
     }
-    
-    //    override func viewWillAppear(_ animated: Bool) {
-    //        handle = Auth.auth().addStateDidChangeListener { auth, user in
-    //        }
-    //    }
-    //
-    //    override func viewWillDisappear(_ animated: Bool) {
-    //        Auth.auth().removeStateDidChangeListener(handle!)
-    //    }
     
     
     
@@ -169,7 +153,11 @@ class LoginViewController: UIViewController {
                     alert.addAction(UIAlertAction(title: "OK", style: .default))
                     self.present(alert, animated: true)
                 } else {
-                    self.navigationController?.pushViewController(LoggedInViewController(), animated: true)
+                    ShareManager.shared.isSignIn = true
+                    let tabBarVC = TabBarViewController()
+                    tabBarVC.modalPresentationStyle = .fullScreen
+                    present(tabBarVC, animated: true)
+                    
                 }
             }
         }
@@ -191,8 +179,10 @@ class LoginViewController: UIViewController {
                         alert.addAction(UIAlertAction(title: "OK", style: .default))
                         self?.present(alert, animated: true)
                     }else{
-                        let loggedInVC = LoggedInViewController()
-                        self?.navigationController?.pushViewController(loggedInVC, animated: true)
+                        ShareManager.shared.isSignIn = true
+                        let tabBarVC = TabBarViewController()
+                        tabBarVC.modalPresentationStyle = .fullScreen
+                        self!.present(tabBarVC, animated: true)
                         
                     }
                 }
